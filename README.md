@@ -19,7 +19,7 @@ Sigue estos pasos para descargar y configurar el proyecto:
    ```bash
    git clone https://github.com/MarcosCampos25/inrol-cypress-test.git
    cd inrol-cypress-test
-   npm install```
+   npm install
 
 ## Estructura del Proyecto
 - cypress/integration/smoke_test.spec.js: Contiene las pruebas de smoke test.
