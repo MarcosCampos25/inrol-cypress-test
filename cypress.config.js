@@ -1,21 +1,17 @@
-const { defineConfig } = require('cypress');
-const fs = require('fs');
+const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   e2e: {
+    baseUrl: 'http://localhost:5000',
     setupNodeEvents(on, config) {
-      // Aquí se registran las tareas
-      on('task', {
-        log(message) {
-          console.log(message);
-          return null;
-        },
-        table(message) {
-          console.table(message);
-          return null;
-        },
-      });
-    }
-  }
-});
+    },
+  },
 
+  retries: {
+    runMode: 0,
+    openMode: 0,
+  },
+
+  videosFolder: 'cypress/videos', 
+  screenshotsFolder: 'cypress/screenshots',
+})

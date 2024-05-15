@@ -33,6 +33,10 @@ Sigue estos pasos para descargar y configurar el proyecto:
 
 - npx cypress open (con interfaz gráfica)
 - npx cypress run (sin interfaz gráfica)
+- Para más opciones de ejecución se puede consultar la [documentación](https://docs.cypress.io/guides/guides/command-line) 
+
+## Configuracion
+- En el archivo *cypress.config.js* está la configuración, en el parámetro *baseUrl* estará la url base que se usará para las pruebas (Ej: localhost:5000 para ambiente de desarrollo e inrol.uy para ambiente de producción)
 
 ### Notas
 Este proyecto ignora el directorio node_modules para mantener el repositorio limpio. Asegúrate de ejecutar npm install después de clonar el repositorio para instalar las dependencias necesarias.
